@@ -57,3 +57,18 @@ will have all dependencies needed to run the playbooks.
 .. _Ansible: http://docs.ansible.com/ansible/intro_installation.html
 
 
+Docker image
+++++++++++++
+
+Also there is a custom docker image that bootstraps a simple http service
+utilizing Flask to showcase the effects of the rolling update.
+
+To create the image on your local machine change directory to the repo
+check out and do the following:
+
+.. code-block:: bash
+
+    docker build -t myapp myapp
+
+It is important to give the image the name ``myapp`` otherwise the plays
+will not be able to create the web servers.
