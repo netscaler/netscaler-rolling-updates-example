@@ -1,0 +1,6 @@
+
+file:../deps/nitro-python-1.0.tar.gz
+pyaml
+jinja2
+docker-py
+docker
