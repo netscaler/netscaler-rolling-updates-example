@@ -38,10 +38,11 @@ Install `Ansible`_.
 Module dependencies
 +++++++++++++++++++
 
-Our playbooks utilize the netscaler ansible modules along with
+Our playbooks utilize the `netscaler ansible modules`_ along with
 the docker modules to setup the testbed.
 
-To install these dependencies in a virtual environment do the following.
+To install the dependencies needed by these modules in a virtual environment
+do the following.
 
 .. code-block:: bash
 
@@ -55,6 +56,7 @@ will have all dependencies needed to run the playbooks.
 
 
 .. _Ansible: http://docs.ansible.com/ansible/intro_installation.html
+.. _netscaler ansible modules: https://github.com/citrix/netscaler-ansible-modules
 
 
 Docker image
