@@ -13,6 +13,10 @@ The examples are also applicable for other form factors of Netscaler.
 All configuration and changes will happen on the local machine
 that will run the playbooks.
 
+The tutorial is hosted at `readthedocs`_.
+
+.. _readthedocs: http://netscaler-ansible.readthedocs.io/en/latest/usage/rolling_upgrades.html
+
 Dependencies
 ------------
 
