@@ -14,13 +14,13 @@
       register: cpx_result
       docker_container:
         name: cpx_lb
-        image: cpx:11.1-48.10
+        image: store/citrix/netscalercpx:11.1-53.11
         published_ports:
           - 22
           - 80
           - 161
         env:
-          EULA-yes: "yes"
+          EULA: "yes"
         ulimits:
           - "core:-1"
         tty: yes
