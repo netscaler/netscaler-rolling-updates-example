@@ -11,6 +11,7 @@
   tasks:
     - name: Bring cpx up
       delegate_to: localhost
+      become: true
       register: cpx_result
       docker_container:
         name: cpx_lb
@@ -45,6 +46,7 @@
   tasks:
     - name: Setup backend "{{ servername }}"
       delegate_to: localhost
+      become: true
       register: server_result
       docker_container:
         name: "{{ servername }}"
