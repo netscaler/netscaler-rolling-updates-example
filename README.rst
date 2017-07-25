@@ -20,19 +20,6 @@ The tutorial is hosted at `readthedocs`_.
 Dependencies
 ------------
 
-Netscaler CPX
-+++++++++++++
-
-Download the 11.1 version of Netscaler CPX from `Citrix`_
-
-Follow the instructions to have the image built on your local
-machine.
-
-The image will be utilized by the setup playbook to create a CPX
-instance.
-
-.. _Citrix: https://www.citrix.com/downloads
-
 Ansible
 +++++++
 
@@ -61,20 +48,3 @@ will have all dependencies needed to run the playbooks.
 
 .. _Ansible: http://docs.ansible.com/ansible/intro_installation.html
 .. _netscaler ansible modules: https://github.com/citrix/netscaler-ansible-modules
-
-
-Docker image
-++++++++++++
-
-Also there is a custom docker image that bootstraps a simple http service
-utilizing Flask to showcase the effects of the rolling update.
-
-To create the image on your local machine change directory to the repo
-check out and do the following:
-
-.. code-block:: bash
-
-    docker build -t myapp myapp
-
-It is important to give the image the name ``myapp`` otherwise the plays
-will not be able to create the web servers.
