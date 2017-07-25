@@ -25,25 +25,10 @@ Ansible
 
 Install `Ansible`_.
 
-
 Module dependencies
 +++++++++++++++++++
 
-Our playbooks utilize the `netscaler ansible modules`_ along with
-the docker modules to setup the testbed.
-
-To install the dependencies needed by these modules in a virtual environment
-do the following.
-
-.. code-block:: bash
-
-    git clone https://github.com/citrix/netscaler-rolling-updates-example.git
-    cd netscaler-rolling-updates-example/deps
-    mkvirtualenv myenv
-    pip install -r requirements.txt
-
-After the execution of the above commands the ``myenv`` virtual environment
-will have all dependencies needed to run the playbooks.
+Install the `netscaler ansible modules`_
 
 
 .. _Ansible: http://docs.ansible.com/ansible/intro_installation.html
