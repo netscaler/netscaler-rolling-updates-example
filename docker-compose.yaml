@@ -1,0 +1,43 @@
+version: '2'
+networks:
+  netscaler:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.30.0.0/24
+
+services:
+  cpx:
+    image: giorgosnikolopoulos/cpx:12.0-41.22
+    ports:
+      - '22'
+      - '80'
+      - '443'
+      - '161'
+    environment:
+      EULA: 'yes'
+    ulimits:
+      core: -1
+    tty: true
+    stdin_open: true
+    privileged: true
+    networks:
+      netscaler:
+        ipv4_address: 172.30.0.10
+
+
+  webapp1:
+    image: giorgosnikolopoulos/flaskapp:latest
+    ports:
+      - '8000'
+    networks:
+      netscaler:
+        ipv4_address: 172.30.0.21
+
+  webapp2:
+    image: giorgosnikolopoulos/flaskapp:latest
+    ports:
+      - '8000'
+    networks:
+      netscaler:
+        ipv4_address: 172.30.0.22
