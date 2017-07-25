@@ -1,9 +1,0 @@
-
-[netscaler]
-
-netscaler_lb nsip=172.17.0.2 nitro_user=nsroot nitro_pass=nsroot validate_certs=no
-
-[webservers]
-
-172.17.0.3 nsip=172.17.0.2 nitro_user=nsroot nitro_pass=nsroot servername=server_1 hostip=172.17.0.3
-172.17.0.4 nsip=172.17.0.2 nitro_user=nsroot nitro_pass=nsroot servername=server_2 hostip=172.17.0.4
